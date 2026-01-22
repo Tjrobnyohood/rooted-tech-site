@@ -1,0 +1,1 @@
+User-agent: * \n Allow: / \n Sitemap: https://rooted-tech.is-a.dev/sitemap.xml
