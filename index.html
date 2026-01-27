@@ -19,24 +19,19 @@
         * { box-sizing: border-box; scroll-behavior: smooth; }
 
         body { 
-            font-family: 'Inter', sans-serif; 
-            line-height: 1.6; 
-            background-color: var(--bg-deep);
-            color: var(--white);
-            margin: 0;
-            /* ELABORATE PAISLEY TEXTURE */
-            background-image: url("https://www.transparenttextures.com/patterns/black-paper.png"), 
-                              url("https://img.freepik.com/free-vector/dark-paisley-seamless-pattern-background_53876-114441.jpg");
-            background-size: auto, 600px;
-            background-attachment: fixed;
-        }
+    font-family: 'Inter', sans-serif; 
+    line-height: 1.6; 
+    background-color: #0a0a0a; /* Fallback color to ensure text is readable */
+    color: #f8fafc;
+    margin: 0;
+    /* This combines a paper texture with the paisley for a premium look */
+    background-image: url("https://www.transparenttextures.com/patterns/black-paper.png"), 
+                      url("https://www.transparenttextures.com/patterns/otis-redding.png"); 
+    background-size: auto, 200px;
+    background-attachment: fixed;
+    background-repeat: repeat;
+}
 
-        /* Glassmorphism Sections */
-        section, header {
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            padding: 80px 0;
-        }
 
         .container { max-width: 1100px; margin: auto; padding: 0 20px; }
         
