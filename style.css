@@ -1,32 +1,12 @@
-/* Color Palette & Variables */
-:root {
-    --navy: #1e293b;
-    --slate: #f8fafc;
-    --green: #27ae60;
-    --white: #ffffff;
-    --accent: #3b82f6;
-}
-
-/* Layout */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-ground: white;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    color: #333;
-}
-/* --- ROOTED TECH PROFESSIONAL STYLESHEET --- */
+/* --- ROOTED TECH DARK MODE STYLESHEET --- */
 
 :root {
-    --navy: #1e293b;      /* Strong Tower Navy */
-    --slate: #f1f5f9;     /* Soft Light Gray */
-    --green: #27ae60;     /* Rooted Green */
-    --accent: #3b82f6;    /* Security Blue */
-    --white: #ffffff;
-    --text: #334155;
+    --bg-deep: #0f172a;    /* Deepest Midnight */
+    --bg-alt: #1e293b;     /* Lighter Slate/Charcoal */
+    --green: #22c55e;      /* Vibrant Root Green */
+    --accent: #3b82f6;     /* Security Blue */
+    --white: #f8fafc;      /* Off-white text */
+    --text-muted: #94a3b8; /* Muted gray text */
 }
 
 * {
@@ -35,21 +15,22 @@ ground: white;
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'Inter', sans-serif;
     line-height: 1.6;
     margin: 0;
-    color: var(--text);
-    background-color: var(--white);
+    color: var(--white);
+    background-color: var(--bg-deep);
 }
 
 /* --- STICKY HEADER --- */
 nav {
     position: sticky;
     top: 0;
-    background: var(--white);
+    background: rgba(15, 23, 42, 0.95); /* Transparent Midnight */
+    backdrop-filter: blur(10px);
     padding: 1rem 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    z-index: 1000; /* Stays on top of everything */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1000;
 }
 
 .nav-container {
@@ -64,13 +45,97 @@ nav {
 .logo {
     font-weight: 800;
     font-size: 1.5rem;
-    color: var(--navy);
-    text-transform: uppercase;
+    color: var(--white);
+    letter-spacing: 1px;
 }
 
 .logo span { color: var(--green); }
 
 nav ul {
     list-style: none;
-   
-    display
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover { color: var(--green); }
+
+/* --- ALTERNATING SECTIONS --- */
+.section-padding { padding: 100px 0; }
+
+.bg-deep { background-color: var(--bg-deep); }
+.bg-alt  { background-color: var(--bg-alt); }
+
+/* --- COMPONENTS --- */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--green);
+}
+
+.scripture {
+    font-size: 1.5rem;
+    font-style: italic;
+    border-left: 4px solid var(--green);
+    padding-left: 20px;
+    margin: 40px auto;
+    max-width: 800px;
+    color: var(--white);
+}
+
+.accent-text { color: var(--green); font-weight: bold; }
+
+/* --- CONTACT BOX --- */
+.contact-box {
+    background: var(--bg-alt);
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background: var(--bg-deep);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 6px;
+    color: white;
+}
+
+.btn-primary {
+    background: var(--green);
+    color: var(--bg-deep);
+    padding: 12px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
