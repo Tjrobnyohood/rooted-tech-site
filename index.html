@@ -14,15 +14,24 @@
         --text-muted: #94a3b8;
     }
 
+    /* Fixed background on html element to ensure it stays behind everything */
+    html {
+        min-height: 100%;
+        background-image: url("https://www.transparenttextures.com/patterns/oriental-tiles.png");
+        background-size: 350px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: repeat;
+    }
+
     body { 
         font-family: 'Inter', sans-serif;
         background-color: var(--bg-deep);
         color: var(--white);
         margin: 0;
-        /* ORNATE PAISLEY TEXTURE */
-        background-image: url("https://www.transparenttextures.com/patterns/oriental-tiles.png");
-        background-size: 350px;
-        background-attachment: fixed;
+        min-height: 100%;
+        /* Allow the background from html to show through */
+        background: transparent;
     }
 
     .container { max-width: 1100px; margin: auto; padding: 0 20px; }
@@ -63,13 +72,18 @@
 
     header, section { padding: 60px 0; }
     .text-center { text-align: center; }
-    .bg-alt { background: rgba(255, 255, 255, 0.02); }
+    
+    /* Make bg-alt sections semi-transparent to show the paisley pattern */
+    .bg-alt { 
+        background: rgba(255, 255, 255, 0.02); 
+    }
 
     input, textarea { width: 100%; padding: 12px; margin-bottom: 15px; background: #0f172a; border: 1px solid #334155; color: white; border-radius: 5px; box-sizing: border-box; }
     .btn-primary { background: var(--yellow); color: #000; padding: 15px 30px; border: none; border-radius: 8px; font-weight: 700; width: 100%; cursor: pointer; }
 
     @media (max-width: 768px) { nav ul { display: none; } }
     </style>
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
 </head>
 <body>
 
@@ -79,6 +93,7 @@
             <ul>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#mission">Mission</a></li>
+                <li><a href="#expansion">Expansion</a></li>
                 <li><a href="#philanthropy">Tithe Tech</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -103,12 +118,26 @@
             </div>
             <h2>Mission & About Us</h2>
             <p style="font-size: 1.1rem; max-width: 800px;">
-                Owned by <strong>Brea & TJ Singletary</strong>, Rooted Tech Services translates complex cybersecurity into peace of mind. Grounded in the <strong>NIST Framework</strong>, we stand as watchmen for Oklahoma’s digital frontier.
+                Owned by <strong>Brea & TJ Singletary</strong>, Rooted Tech Services translates complex cybersecurity into peace of mind. Grounded in the <strong>NIST Framework</strong>, we stand as watchmen for Oklahoma's digital frontier.
             </p>
         </div>
     </section>
 
-    <section id="philanthropy">
+    <section id="expansion" class="container">
+        <h2 style="color:var(--yellow);">Rural Sovereignty Framework</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Scalable Rural Defense</h3>
+                <p>Our auditing framework is designed specifically for rural Oklahoma but applies to any community where local data must be protected from global threats.</p>
+            </div>
+            <div class="card">
+                <h3>Community Empowerment</h3>
+                <p>We build the digital infrastructure that allows small-town businesses to thrive without relying on invasive cloud monopolies.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="philanthropy" class="bg-alt">
         <div class="container text-center">
             <h2 style="color:var(--yellow);">Tithe Tech: Ministry & Philanthropy</h2>
             <p style="max-width: 800px; margin: auto; margin-bottom: 30px;">
