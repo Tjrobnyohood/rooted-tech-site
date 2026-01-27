@@ -1,147 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rooted Tech Services | SB 626 Security</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Rooted Tech Services provides SB 626 compliance audits, network defense, and private surveillance for Oklahoma businesses.">
+    <title>Rooted Tech Services | Oklahoma SB 626 Security</title>
+    
+    <style>
+        :root {
+            --yellow: #f1c40f;
+            --bg-dark: #121212;
+            --bg-alt: #1a1a1a;
+            --text-light: #e0e0e0;
+        }
+
+        /* PAISLEY BACKGROUND LOGIC */
+        body { 
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background-color: var(--bg-dark); 
+            /* Subtle Dark Paisley Pattern */
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 20c-10 0-15 10-15 20s10 20 20 20 15-10 15-20-10-20-20-20zM30 50c0-10 10-15 20-15s20 5 20 15-10 20-20 20-20-10-20-20z' fill='%231a1a1a' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+            color: var(--text-light);
+            margin: 0; 
+            overflow-x: hidden; 
+        }
+
+        .container { width: 90%; max-width: 1100px; margin: auto; }
+        .section-padding { padding: 60px 0; }
+        .text-center { text-align: center; }
+        
+        /* Nav */
+        nav { background: rgba(0,0,0,0.9); padding: 15px 0; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #333; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; width: 90%; max-width: 1100px; margin: auto; }
+        .logo { font-weight: bold; font-size: 1.5rem; }
+        .logo span { color: var(--yellow); }
+        nav ul { list-style: none; display: flex; margin: 0; }
+        nav ul li { margin-left: 20px; }
+        nav ul li a { color: white; text-decoration: none; font-size: 0.9rem; }
+
+        /* Cards */
+        .grid { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 40px; }
+        .card { 
+            background: rgba(26, 26, 26, 0.95); 
+            padding: 30px; border-radius: 8px; flex: 1; min-width: 280px; max-width: 350px;
+            border-top: 4px solid var(--yellow);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        /* Search & List */
+        #jargonSearch { 
+            width: 100%; padding: 15px; margin-bottom: 20px; border-radius: 5px; 
+            border: 2px solid var(--yellow); background: #222; color: white;
+        }
+        #jargonList { height: 350px; overflow-y: auto; background: rgba(0,0,0,0.8); padding: 20px; border-radius: 8px; }
+        .term-item strong { color: var(--yellow); }
+
+        /* Form */
+        .contact-box { background: rgba(26, 26, 26, 0.9); padding: 40px; border-radius: 10px; max-width: 600px; margin: auto; }
+        input, textarea { width: 100%; padding: 12px; margin-bottom: 15px; background: #222; border: 1px solid #444; color: white; border-radius: 5px; box-sizing: border-box;}
+        .btn-primary { background: var(--yellow); color: black; padding: 15px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; width: 100%; }
+
+        @media (max-width: 768px) { nav ul { display: none; } }
+    </style>
 </head>
 <body>
 
     <nav>
         <div class="nav-container">
             <div class="logo">ROOTED<span>TECH</span></div>
-           <ul>
-    <li><a href="#mission">Mission</a></li>
-    <li><a href="#blueprint">The Blueprint</a></li> <li><a href="#services">Services</a></li>
-    <li><a href="#contact">Contact</a></li>
-</ul>
-
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#glossary">Glossary</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
     </nav>
 
-    <header class="bg-deep section-padding">
+    <header id="services" class="section-padding">
         <div class="container text-center">
-            <h1>Strong Tower <span style="color:var(--yellow)">Security</span></h1>
-            <p>Oklahoma SB 626 Compliance & Digital Infrastructure for Maysville.</p>
-            <a href="#contact" class="btn-primary">Request Audit</a>
+            <h1>Strong Tower <span style="color:var(--yellow);">Security</span></h1>
+            <p style="color: #bbb;">Oklahoma SB 626 Compliance & Digital Auditing</p>
+            <div class="grid">
+                <div class="card"><h2>SB 626 Audits</h2><p>Meticulous security auditing to meet State compliance standards.</p></div>
+                <div class="card"><h2>Network Defense</h2><p>Hardwired protection and high-performance optimization.</p></div>
+                <div class="card"><h2>Private Surveillance</h2><p>Physical camera systems with private, encrypted on-site storage.</p></div>
+            </div>
         </div>
     </header>
 
-    <section id="mission" class="bg-alt section-padding">
-        <div class="container">
-            <blockquote class="scripture">
-                “The name of the LORD is a strong tower; the righteous run into it and are safe.” — Proverbs 18:10
-            </blockquote>
-            <h2>God-First Technology</h2>
-            <p>Owned by <strong>Brea & TJ Singletary</strong>. We believe technology is a tool to be used with integrity to protect what families have worked hard to build.</p>
+    <section id="mission" class="section-padding" style="background: rgba(26,26,26,0.7);">
+        <div class="container text-center">
+            <h2 style="color:var(--yellow);">Our Mission</h2>
+            <p style="max-width: 800px; margin: auto; line-height: 1.8;">
+                Owned by <strong>Brea & TJ Singletary</strong>. Grounded in the <strong>NIST Framework</strong>, we protect Oklahoma businesses with integrity and specialized expertise.
+            </p>
         </div>
     </section>
 
-    <section id="services" class="bg-deep section-padding">
+    <section id="glossary" class="section-padding">
         <div class="container">
-            <h2 style="color:var(--yellow); text-align:center;">Our Services</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>SB 626 Audits</h3>
-                    <p>Professional audits using the "Strong Tower" lab architecture to secure your Safe Harbor defense.</p>
-                </div>
-                <div class="card">
-                    <h3>Network Defense</h3>
-                    <p>Hardwired security and optimization for local shops, clinics, and farms.</p>
-                </div>
-                <div class="card">
-                    <h3>Camera Systems</h3>
-                    <p>Physical surveillance with private, secure NVR storage—no "cloud" vulnerabilities.</p>
-                </div>
+            <h2 class="text-center" style="color:var(--yellow);">Jargon Database</h2>
+            <input type="text" id="jargonSearch" onkeyup="searchJargon()" placeholder="Search terms (VPN, Firewall, IP)...">
+            <div id="jargonList">
+                <div class="term-item"><strong>IP Address:</strong><p>The digital street address for your device.</p></div>
+                <hr style="border:0; border-top:1px solid #333;">
+                <div class="term-item"><strong>Firewall:</strong><p>A gatekeeper monitoring incoming/outgoing traffic.</p></div>
+                <hr style="border:0; border-top:1px solid #333;">
+                <div class="term-item"><strong>Phishing:</strong><p>Deceptive messages used to steal data.</p></div>
+                <hr style="border:0; border-top:1px solid #333;">
+                <div class="term-item"><strong>SB 626:</strong><p>Oklahoma State cybersecurity standards.</p></div>
             </div>
         </div>
     </section>
 
-    <section id="philanthropy" class="bg-alt section-padding">
-        <div class="container">
-            <div class="grid">
-                <div>
-                    <h2 style="color:var(--green);">"Tithed Tech" Initiative</h2>
-                    <p>Our faith is our operating system. We commit to a <strong>10% Tithe of Service</strong>.</p>
-                    <p>For every ten businesses we secure, we provide one completely free security audit and network optimization for a local church or ministry.</p>
-                </div>
-                <div class="card" style="border-color:var(--green);">
-                    <h3>Ministry Partners</h3>
-                    <p>Ensuring that resources meant for the Kingdom are never lost to hackers or legal penalties.</p>
-                    <a href="#contact" class="btn-primary" style="background:var(--green); color:white;">Apply as a Non-Profit</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    
-
-    <section id="jargon" class="bg-alt section-padding">
-        <div class="container">
-            <h2 style="color:var(--yellow);">Tech Jargon Repository</h2>
-            <div class="jargon-item"><strong>Safe Harbor:</strong> Legal protection for businesses following recognized security standards.</div>
-            <div class="jargon-item"><strong>NVR:</strong> Network Video Recorder—keeps your footage private on your own hardware.</div>
-            <div class="jargon-item"><strong>Affirmative Defense:</strong> A legal shield against state fines of up to $150,000.</div>
-        </div>
-    </section>
-<section id="downloads" class="bg-deep section-padding">
-    <div class="container">
-        <h2 style="color:var(--yellow); text-align:center;">Resource Vault</h2>
-        <p style="text-align:center; margin-bottom: 40px;">Professional documentation for our "Charter Clients" and partners.</p>
-        
-        <div class="grid">
-            <div class="card">
-                <h3 style="color:var(--green);">Rules of Engagement (RoE)</h3>
-                <p>The essential legal framework for our security audits. Defines the scope, timeline, and permission to test.</p>
-                <a href="#" class="btn-primary" style="background:var(--bg-alt); color:var(--white); border: 1px solid var(--green);">Download Template (PDF)</a>
-            </div>
-
-            <div class="card">
-                <h3 style="color:var(--green);">SB 626 Fact Sheet</h3>
-                <p>A 1-page summary of the Oklahoma Safe Harbor law and what it means for your local business.</p>
-                <a href="#" class="btn-primary" style="background:var(--bg-alt); color:var(--white); border: 1px solid var(--green);">Download Guide</a>
-            </div>
-        </div>
-    </div>
-</section
-    >
-    <section id="contact" class="bg-deep section-padding">
-        <div class="container">
+    <section id="contact" class="section-padding" style="background: rgba(26,26,26,0.7);">
+        <div class="container text-center">
+            <h2 style="color:var(--yellow);">Connect with the Watchman</h2>
+            <p>New Clients: <a href="tel:4055540603" style="color:var(--yellow); text-decoration:none; font-weight:bold;">(405) 554-0603</a></p>
             <div class="contact-box">
-                <h2 style="text-align:center; color:white;">Initiate Security Audit</h2>
                 <form action="https://formspree.io/f/xdagplkg" method="POST">
-    <input type="text" name="Business_Name" placeholder="Business or Ministry Name" required>
-    <input type="email" name="Email_Address" placeholder="Email Address" required>
-    <textarea name="Message" placeholder="Tell us about your infrastructure needs..." required></textarea>
-    
-    <input type="hidden" name="_next" value="https://tjrobnyohood.github.io/rooted-tech-site/">
-    
-    <button type="submit" class="btn-primary" style="width:100%; cursor:pointer;">Connect with Rooted Tech</button>
-       
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Business Email" required>
+                    <textarea name="message" rows="5" placeholder="How can we fortify your infrastructure?" required></textarea>
+                    <button type="submit" class="btn-primary">Initialize Audit Request</button>
                 </form>
             </div>
         </div>
     </section>
 
-<section id="blueprint" class="bg-alt section-padding">
-    <div class="container">
-        <h2 style="text-align:center;">The Strong Tower Blueprint</h2>
-        <p style="text-align:center;">While we are rooted in Maysville, our security architecture is designed to protect rural infrastructure nationwide.</p>
-        <div class="grid">
-            <div class="card">
-                <h3>Scalable Defense</h3>
-                <p>Built on the NIST Cybersecurity Framework, our audits meet national standards while respecting local privacy.</p>
-            </div>
-            <div class="card">
-                <h3>Remote Monitoring</h3>
-                <p>The "Watchman" service is built to support businesses across state lines via encrypted tunnels.</p>
-            </div>
-        </div>
-    </div>
-</section>
-    
-    <footer style="text-align:center; padding: 40px; background:#000;">
-        <p>&copy; 2026 Rooted Tech Services | <a href="#mission" style="color:var(--te
-
+    <script>
+        function searchJargon() {
+            let input = document.getElementById('jargonSearch').value.toLowerCase();
+            let items = document.getElementsByClassName('term-item');
+            for (let i = 0; i < items.length; i++) {
+                let text = items[i].innerText.toLowerCase();
+                items[i].style.display = text.includes(input) ? "" : "none";
+                let hr = items[i].nextElementSibling;
+                if (hr && hr.tagName === "HR") hr.style.display = items[i].style.display;
+            }
+        }
+    </script>
+</body>
+</html>
