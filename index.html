@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rooted Tech Services: Oklahoma SB 626 Audits, Network Defense, and Tithe Tech Philanthropy. Founded by Brea & TJ Singletary.">
+    <meta name="description" content="Rooted Tech Services: Oklahoma SB 626 Audits, Network Defense, and Tithe Tech Philanthropy.">
     <title>Rooted Tech Services | Strong Tower Security</title>
     
     <style>
@@ -27,7 +27,6 @@
 
     .container { max-width: 1100px; margin: auto; padding: 0 20px; }
 
-    /* Navigation */
     nav { 
         position: sticky;
         top: 0; 
@@ -40,10 +39,8 @@
     .logo { font-weight: 800; font-size: 1.5rem; color: var(--white); text-decoration: none; }
     .logo span { color: var(--yellow); }
     nav ul { list-style: none; display: flex; gap: 20px; margin: 0; }
-    nav a { text-decoration: none; color: var(--text-muted); font-weight: 500; transition: 0.3s; }
-    nav a:hover { color: var(--yellow); }
+    nav a { text-decoration: none; color: var(--text-muted); font-weight: 500; }
 
-    /* UI Components */
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 40px; }
     
     .card, .contact-box, .scripture {
@@ -54,9 +51,7 @@
         padding: 30px;
         border-radius: 12px;
         margin-bottom: 20px;
-        transition: 0.3s;
     }
-    .card:hover { transform: translateY(-5px); background: rgba(15, 23, 42, 0.98); }
 
     .scripture { 
         font-size: 1.5rem;
@@ -64,27 +59,16 @@
         color: var(--yellow);
         border-left: 4px solid var(--yellow); 
         padding-left: 20px; 
-        margin: 40px 0;
     }
 
-    /* Sections */
     header, section { padding: 60px 0; }
     .text-center { text-align: center; }
     .bg-alt { background: rgba(255, 255, 255, 0.02); }
 
-    /* Glossary & Form */
-    #jargonSearch { 
-        width: 100%; padding: 15px; margin-bottom: 20px; border-radius: 8px; 
-        border: 2px solid var(--yellow); background: rgba(0,0,0,0.5); color: white;
-    }
-    #jargonList { height: 300px; overflow-y: auto; background: rgba(0,0,0,0.6); padding: 20px; border-radius: 8px; }
     input, textarea { width: 100%; padding: 12px; margin-bottom: 15px; background: #0f172a; border: 1px solid #334155; color: white; border-radius: 5px; box-sizing: border-box; }
-    .btn-primary { background: var(--yellow); color: #000; padding: 15px 30px; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; width: 100%; font-size: 1.1rem; }
+    .btn-primary { background: var(--yellow); color: #000; padding: 15px 30px; border: none; border-radius: 8px; font-weight: 700; width: 100%; cursor: pointer; }
 
-    @media (max-width: 768px) {
-        nav ul { display: none; }
-        h1 { font-size: 2rem; }
-    }
+    @media (max-width: 768px) { nav ul { display: none; } }
     </style>
 </head>
 <body>
@@ -96,7 +80,6 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#mission">Mission</a></li>
                 <li><a href="#philanthropy">Tithe Tech</a></li>
-                <li><a href="#glossary">Glossary</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -104,11 +87,11 @@
 
     <header id="services" class="container text-center">
         <h1 style="font-size: 3.5rem; margin-bottom: 10px;">Strong Tower <span style="color:var(--yellow);">Security</span></h1>
-        <p style="font-size: 1.2rem; color: var(--text-muted);">Oklahoma SB 626 Compliance & Digital Infrastructure Auditing</p>
+        <p style="font-size: 1.2rem; color: var(--text-muted);">Oklahoma SB 626 Compliance & Auditing</p>
         <div class="grid">
             <div class="card"><h3>SB 626 Audits</h3><p>Professional auditing to ensure state compliance and data sovereignty.</p></div>
-            <div class="card"><h3>Network Defense</h3><p>Hardwired security optimization for resilient small business operations.</p></div>
-            <div class="card"><h3>Private Surveillance</h3><p>Encrypted on-site camera systems. Your data, your eyes, no cloud leaks.</p></div>
+            <div class="card"><h3>Network Defense</h3><p>Hardwired security optimization for resilient business operations.</p></div>
+            <div class="card"><h3>Private Surveillance</h3><p>Encrypted on-site camera systems. No cloud leaks.</p></div>
         </div>
     </header>
 
@@ -120,7 +103,7 @@
             </div>
             <h2>Mission & About Us</h2>
             <p style="font-size: 1.1rem; max-width: 800px;">
-                [span_1](start_span)Owned by <strong>Brea & TJ Singletary</strong>, Rooted Tech Services translates complex cybersecurity into peace of mind[span_1](end_span). [span_2](start_span)Grounded in the <strong>NIST Framework</strong>, we stand as watchmen for Oklahoma’s digital frontier[span_2](end_span).
+                Owned by <strong>Brea & TJ Singletary</strong>, Rooted Tech Services translates complex cybersecurity into peace of mind. Grounded in the <strong>NIST Framework</strong>, we stand as watchmen for Oklahoma’s digital frontier.
             </p>
         </div>
     </section>
@@ -129,33 +112,17 @@
         <div class="container text-center">
             <h2 style="color:var(--yellow);">Tithe Tech: Ministry & Philanthropy</h2>
             <p style="max-width: 800px; margin: auto; margin-bottom: 30px;">
-                [span_3](start_span)We believe in sowing where we reap[span_3](end_span). [span_4](start_span)Through our <strong>Tithe Tech</strong> initiative, a portion of every audit is donated to local Oklahoma ministries[span_4](end_span).
+                We believe in sowing where we reap. Through our Tithe Tech initiative, a portion of every audit is donated to local Oklahoma ministries.
             </p>
             <div class="grid">
                 <div class="card">
                     <h3>Sowing into Community</h3>
-                    [span_5](start_span)<p>Supporting local missions that provide essential services to the Maysville area[span_5](end_span).</p>
+                    <p>Supporting local missions that provide essential services to the Maysville area.</p>
                 </div>
                 <div class="card">
                     <h3>Digital Literacy</h3>
-                    [span_6](start_span)<p>Providing free workshops to protect seniors and families from online threats[span_6](end_span).</p>
+                    <p>Providing free workshops to protect seniors and families from online threats.</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="glossary" class="bg-alt">
-        <div class="container">
-            <h2 style="color:var(--yellow);">Jargon Database</h2>
-            <input type="text" id="jargonSearch" onkeyup="searchJargon()" placeholder="Search terms (IP, Firewall, Phishing...)...">
-            <div id="jargonList">
-                [span_7](start_span)<div class="term-item"><strong>IP Address:</strong><p>The digital street address for your device[span_7](end_span).</p></div>
-                <hr style="border:0; border-top:1px solid #333; margin: 15px 0;">
-                [span_8](start_span)<div class="term-item"><strong>Firewall:</strong><p>A gatekeeper monitoring incoming/outgoing traffic[span_8](end_span).</p></div>
-                <hr style="border:0; border-top:1px solid #333; margin: 15px 0;">
-                [span_9](start_span)<div class="term-item"><strong>Phishing:</strong><p>Fraudulent messages designed to steal sensitive data[span_9](end_span).</p></div>
-                <hr style="border:0; border-top:1px solid #333; margin: 15px 0;">
-                [span_10](start_span)<div class="term-item"><strong>SB 626:</strong><p>Oklahoma security standards for data protection[span_10](end_span).</p></div>
             </div>
         </div>
     </section>
@@ -163,12 +130,11 @@
     <section id="contact">
         <div class="container text-center">
             <h2 style="color:var(--yellow);">Connect with the Watchman</h2>
-            [span_11](start_span)<p>New Clients: <a href="tel:4055540603" style="color:var(--yellow); text-decoration:none; font-weight:bold;">(405) 554-0603</a>[span_11](end_span)</p>
             <div class="contact-box">
                 <form action="https://formspree.io/f/YOUR_ID_HERE" method="POST">
                     <input type="text" name="name" placeholder="Full Name" required>
                     <input type="email" name="email" placeholder="Business Email" required>
-                    [span_12](start_span)<textarea name="message" rows="5" placeholder="How can we fortify your infrastructure?" required></textarea>[span_12](end_span)
+                    <textarea name="message" rows="5" placeholder="How can we fortify your infrastructure?" required></textarea>
                     <button type="submit" class="btn-primary">Initialize Audit Request</button>
                 </form>
             </div>
@@ -176,20 +142,8 @@
     </section>
 
     <footer style="text-align: center; padding: 40px; color: var(--text-muted); font-size: 0.9rem;">
-        &copy; 2026 Rooted Tech Services. Grounded in Integrity. [span_13](start_span)Fortified by Faith[span_13](end_span).
+        &copy; 2026 Rooted Tech Services. Grounded in Integrity. Fortified by Faith.
     </footer>
 
-    <script>
-        function searchJargon() {
-            let input = document.getElementById('jargonSearch').value.toLowerCase();
-            let items = document.getElementsByClassName('term-item');
-            for (let i = 0; i < items.length; i++) {
-                [span_14](start_span)let text = items[i].innerText.toLowerCase();[span_14](end_span)
-                items[i].style.display = text.includes(input) ? "" : "none";
-                let hr = items[i].nextElementSibling;
-                if (hr && hr.tagName === "HR") hr.style.display = items[i].style.display;
-            }
-        }
-    </script>
 </body>
 </html>
