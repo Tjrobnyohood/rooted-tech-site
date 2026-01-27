@@ -22,23 +22,25 @@
 body { 
     font-family: 'Inter', sans-serif; 
     line-height: 1.6; 
-    background-color: #0d0d0d; /* Deep charcoal base */
+    background-color: #0d0d0d; 
     color: #f8fafc;
     margin: 0;
-    /* Subtle Paisley Pattern - Encoded to prevent broken links */
-    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 5c-15 0-20 15-10 25s25-5 25-15-5-10-15-10zm-30 35c-10 0-15 10-5 20s20-5 20-15-5-10-15-10zm50 20c-10 0-15 10-5 20s20-5 20-15-5-10-15-10z' fill='%23222' fill-opacity='0.4'/%3E%3C/svg%3E");
-    background-size: 250px; /* Adjust this to make the paisley bigger or smaller */
+    /* This is an actual seamless paisley pattern */
+    background-image: url("https://www.transparenttextures.com/patterns/p6.png");
+    background-size: 400px; 
     background-attachment: fixed;
     background-repeat: repeat;
 }
 
-/* Add this to your cards to make them pop against the pattern */
-.card, .contact-box {
-    background: rgba(18, 18, 18, 0.95);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+/* This adds a dark tint OVER the paisley so it stays subtle and professional */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Adjust the 0.7 to 0.9 if it's too bright */
+    z-index: -1;
 }
+
 
 
         .container { max-width: 1100px; margin: auto; padding: 0 20px; }
