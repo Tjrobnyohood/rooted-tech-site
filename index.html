@@ -7,26 +7,38 @@
     <title>Rooted Tech Services | Strong Tower Security</title>
     
     <style>
-        :root {
-            --bg-deep: #0a0a0a; 
-            --bg-alt: rgba(30, 41, 59, 0.8);
-            --yellow: #facc15; 
-            --green: #22c55e;
-            --white: #f8fafc; 
-            --text-muted: #94a3b8;
-        }
+    :root {
+        --bg-deep: #0a0a0a; 
+        --yellow: #facc15; 
+        --white: #f8fafc; 
+    }
 
-        * { box-sizing: border-box; scroll-behavior: smooth; }
+    body { 
+        font-family: 'Inter', sans-serif; 
+        background-color: var(--bg-deep);
+        color: var(--white);
+        margin: 0;
+        /* HIGH-DETAIL PAISLEY TEXTURE */
+        background-image: url("https://www.transparenttextures.com/patterns/oriental-tiles.png");
+        background-size: 350px;
+        background-attachment: fixed;
+    }
+
+    /* This makes your cards look like they are floating over the paisley */
+    .card, .contact-box, .scripture {
+        background: rgba(15, 23, 42, 0.92);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-top: 4px solid var(--yellow);
+        padding: 30px;
+        border-radius: 12px;
+        margin-bottom: 20px;
+    }
+
+    .container { max-width: 1100px; margin: auto; padding: 0 20px; }
+</style>
 
        
-body {
-    background-color: #0d0d0d;
-    /* This pattern is a true, ornate paisley teardrop design */
-    background-image: url("https://www.transparenttextures.com/patterns/oriental-tiles.png");
-    background-size: 300px; /* Adjust this to make the pattern bigger or smaller */
-    background-attachment: fixed;
-    background-repeat: repeat;
-}
 
 	.container { max-width: 1100px; margin: auto; padding: 0 20px; }
         
