@@ -1,12 +1,37 @@
 /* --- ROOTED TECH DARK MODE STYLESHEET --- */
 
 :root {
-    --bg-deep: #0f172a;    /* Deepest Midnight */
-    --bg-alt: #1e293b;     /* Lighter Slate/Charcoal */
-    --green: #22c55e;      /* Vibrant Root Green */
-    --accent: #3b82f6;     /* Security Blue */
-    --white: #f8fafc;      /* Off-white text */
-    --text-muted: #94a3b8; /* Muted gray text */
+    --bg-deep: #0f172a;    
+    --bg-alt: #1e293b;     
+    --green: #22c55e;      
+    --yellow: #facc15;     /* NEW: High-contrast Yellow */
+    --accent: #3b82f6;     
+    --white: #f8fafc;      
+    --text-muted: #94a3b8; 
+}
+
+/* Update your primary button to use the Yellow */
+.btn-primary {
+    background: var(--yellow);
+    color: #000000;         /* Black text on yellow is the most readable */
+    padding: 12px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 800;       /* Extra bold for visibility */
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background: #eab308;    /* Slightly darker yellow on hover */
+}
+
+/* Use yellow for important accents like the scripture reference */
+.scripture strong {
+    color: var(--yellow);
+    
 }
 
 * {
