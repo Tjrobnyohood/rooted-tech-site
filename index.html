@@ -110,13 +110,16 @@
     <section id="contact" class="container section-padding">
         <div class="contact-box">
             <h2 class="text-center">Initiate Security Audit</h2>
-            <form name="rooted-audit-request" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-                <input type="hidden" name="form-name" value="rooted-audit-request">
-                <input type="text" name="name" placeholder="Business Owner Name" required>
-                <input type="email" name="email" placeholder="Professional Email" required>
-                <textarea name="message" placeholder="How many devices or endpoints do you need to secure?"></textarea>
-                <button type="submit" class="btn-primary">Connect with Rooted Tech</button>
-            </form>
+          <form name="rooted-audit-request" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="rooted-audit-request">
+    
+    <input type="text" name="name" placeholder="Business Owner Name" required>
+    <input type="email" name="email" placeholder="Professional Email" required>
+    <textarea name="message" placeholder="How many devices do you need to secure?" required></textarea>
+    
+    <button type="submit" class="btn-primary">Connect with Rooted Tech</button>
+</form>
+
         </div>
     </section>
 <section id="about" class="container section-padding">
