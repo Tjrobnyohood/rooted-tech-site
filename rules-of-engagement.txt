@@ -1,0 +1,22 @@
+ROOTED TECH SERVICES - RULES OF ENGAGEMENT (RoE)
+
+1. PURPOSE: This document defines the boundaries for security testing 
+   between Rooted Tech Services (The Auditor) and the Client.
+   
+2. SCOPE: Testing is limited ONLY to the IP addresses and physical 
+   locations provided by the Client in the signed Audit Request.
+   
+3. METHODOLOGY: We follow NIST Cybersecurity Framework (CSF) standards 
+   to identify, protect, and detect vulnerabilities.
+   
+4. AUTHORIZATION: The Client represents that they have the legal 
+   authority to authorize testing on the target infrastructure.
+   
+5. LIMITATIONS: No "Denial of Service" (DoS) attacks will be 
+   performed unless explicitly requested. Data integrity is the 
+   priority.
+   
+6. CONFIDENTIALITY: All findings are "Eyes Only" for the Client 
+   and will be encrypted during storage and delivery.
+
+CONTACT: Connect with us at https://tjrobnyohood.github.io/rooted-tech-site/
