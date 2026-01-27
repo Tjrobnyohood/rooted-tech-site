@@ -12,46 +12,65 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     margin: 0;
-    color: #334155;
-}
-
-.container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 0 20px;
-}
-
-.section-padding {
-    padding: 80px 0;
-}
-
-/* Alternating Sections */
-.bg-white { background-color: var(--white); }
-.bg-light { background-color: var(--slate); border-top: 1px solid #e2e8f0; }
-.bg-dark  { background-color: var(--navy); color: var(--white); }
-
-/* Scripture & Mission */
-.scripture {
-    font-size: 1.4rem;
-    font-style: italic;
-    border-left: 5px solid var(--green);
-    padding-left: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-}
-
-/* Grid Logic */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-}
-
-/* Forms */
-.contact-box {
-    background: white;
+ground: white;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     color: #333;
 }
+/* --- ROOTED TECH PROFESSIONAL STYLESHEET --- */
+
+:root {
+    --navy: #1e293b;      /* Strong Tower Navy */
+    --slate: #f1f5f9;     /* Soft Light Gray */
+    --green: #27ae60;     /* Rooted Green */
+    --accent: #3b82f6;    /* Security Blue */
+    --white: #ffffff;
+    --text: #334155;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color: var(--text);
+    background-color: var(--white);
+}
+
+/* --- STICKY HEADER --- */
+nav {
+    position: sticky;
+    top: 0;
+    background: var(--white);
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000; /* Stays on top of everything */
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--navy);
+    text-transform: uppercase;
+}
+
+.logo span { color: var(--green); }
+
+nav ul {
+    list-style: none;
+   
+    display
