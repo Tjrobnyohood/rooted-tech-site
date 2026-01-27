@@ -1,0 +1,17 @@
+​Rooted Tech Services: Security Audit Request & Authorization
+​1. Authorization & Consent
+The undersigned (the "Client") hereby authorizes Rooted Tech Services to perform a security audit on the systems described in Section 2. This authorization constitutes "authorized access" under the Computer Fraud and Abuse Act (CFAA) and similar state statutes.
+​2. Scope of Infrastructure
+​Domain(s)/IP Addresses: ____________________________________
+​Physical Location (if applicable): __________________________
+​Excluded Systems: __________________________________________
+​3. Disclosures & Risk Acknowledgment
+​Nature of Testing: Client acknowledges that security auditing, by its nature, involves active probing of systems which may, in rare cases, cause service instability or latency.
+​Data Integrity: While Rooted Tech Services prioritizes system uptime, the Client is responsible for ensuring a current, verified backup of all critical data exists prior to the commencement of testing.
+​Third-Party Services: Client warrants they have the authority to authorize testing on any third-party hosted services (Cloud, ISP) included in the scope.
+​4. Confidentiality & Non-Disclosure
+Rooted Tech Services agrees that all vulnerabilities, data, and network configurations discovered during the audit are strictly confidential and will not be disclosed to any third party without express written consent from the Client.
+​5. Limitation of Liability
+Rooted Tech Services shall not be liable for any indirect, incidental, or consequential damages resulting from the audit, provided the auditor adheres to the agreed-upon Rules of Engagement.
+​Client Signature: ___________________________  Date: __________
+Printed Name: ______________________________  Title: _________
