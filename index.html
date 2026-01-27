@@ -121,12 +121,15 @@
         <div class="container">
             <div class="contact-box">
                 <h2 style="text-align:center; color:white;">Initiate Security Audit</h2>
-                <form name="rooted-audit-request" method="POST" data-netlify="true">
-                    <input type="hidden" name="form-name" value="rooted-audit-request">
-                    <input type="text" name="name" placeholder="Business or Ministry Name" required>
-                    <input type="email" name="email" placeholder="Email Address" required>
-                    <textarea name="message" placeholder="Tell us about your infrastructure needs..." required></textarea>
-                    <button type="submit" class="btn-primary" style="width:100%">Connect with Rooted Tech</button>
+                <form action="https://formspree.io/f/xdagplkg" method="POST">
+    <input type="text" name="Business_Name" placeholder="Business or Ministry Name" required>
+    <input type="email" name="Email_Address" placeholder="Email Address" required>
+    <textarea name="Message" placeholder="Tell us about your infrastructure needs..." required></textarea>
+    
+    <input type="hidden" name="_next" value="https://tjrobnyohood.github.io/rooted-tech-site/">
+    
+    <button type="submit" class="btn-primary" style="width:100%; cursor:pointer;">Connect with Rooted Tech</button>
+       
                 </form>
             </div>
         </div>
