@@ -30,3 +30,24 @@ nav a:hover { color: var(--yellow); }
 .btn-doc { background: transparent; border: 1px solid var(--green); color: var(--green); padding: 10px 20px; border-radius: 6px; text-decoration: none; display: inline-block; margin-top: 10px; }
 .contact-box { background: var(--bg-alt); padding: 40px; border-radius: 15px; border: 1px solid rgba(255, 255, 255, 0.1); }
 input, textarea { width: 100%; padding: 12px; margin-bottom: 15px; background: var(--bg-deep); border: 1px solid rgba(255,255,255,0.2); border-radius: 6px; color: white; }
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 92%; /* Give more room on small screens */
+    }
+    
+    h1 {
+        font-size: 1.8rem; /* Shrink big titles so they don't wrap weirdly */
+    }
+
+    .contact-box {
+        padding: 20px; /* Less padding to save space */
+    }
+
+    /* Make buttons easier to tap with thumbs */
+    .btn-primary {
+        width: 100%;
+        padding: 20px;
+    }
+}
