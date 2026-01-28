@@ -3,23 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Primary Meta Tags -->
-    <meta name="title" content="Rooted Tech Services | Strong Tower Security - Oklahoma Cybersecurity Experts">
     <meta name="description" content="Rooted Tech Services - God-first cybersecurity company providing Oklahoma SB 626 audits, network defense, and protection for small rural businesses. Learn how to stay protected with our expert classes and technical resources.">
-    <meta name="keywords" content="Rooted Tech, cybersecurity, Oklahoma SB 626, rural business security, network defense, data protection, Oklahoma cybersecurity, Tithe Tech, Strong Tower Security, small business security, agricultural security, rural infrastructure protection">
+    <meta name="keywords" content="Rooted Tech, cybersecurity, Oklahoma SB 626, rural business security, network defense, data protection, Oklahoma cybersecurity, Tithe Tech, Strong Tower Security">
     <meta name="author" content="Rooted Tech Services">
     <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#0a0a0a">
     
     <!-- Open Graph Meta Tags -->
-    <meta property="og:type" content="website">
     <meta property="og:title" content="Rooted Tech Services | Strong Tower Security">
     <meta property="og:description" content="God-first cybersecurity protecting Oklahoma's rural businesses. SB 626 compliance, network defense, and expert protection services.">
+    <meta property="og:type" content="website">
     <meta property="og:url" content="https://rootedtech.com">
     <meta property="og:image" content="https://rootedtech.com/images/og-image.jpg">
-    <meta property="og:site_name" content="Rooted Tech Services">
-    <meta property="og:locale" content="en_US">
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
@@ -27,159 +21,28 @@
     <meta name="twitter:description" content="God-first cybersecurity protecting Oklahoma's rural businesses. SB 626 compliance, network defense, and expert protection services.">
     <meta name="twitter:image" content="https://rootedtech.com/images/twitter-card.jpg">
     
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://rootedtech.com">
-    
     <title>Rooted Tech Services | Strong Tower Security - Oklahoma Cybersecurity Experts</title>
     
-    <!-- Preconnect for Performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
     
-    <!-- Enhanced JSON-LD Structured Data for SEO -->
+    <!-- Structured Data for SEO -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "Rooted Tech Services",
-        "alternateName": "Strong Tower Security",
         "description": "God-first cybersecurity company providing Oklahoma SB 626 audits, network defense, and protection for small rural businesses.",
         "url": "https://rootedtech.com",
         "logo": "https://rootedtech.com/images/logo.png",
-        "foundingDate": "2024",
-        "founders": [
-            {
-                "@type": "Person",
-                "name": "Brea Singletary"
-            },
-            {
-                "@type": "Person",
-                "name": "TJ Singletary"
-            }
-        ],
         "contactPoint": {
             "@type": "ContactPoint",
             "email": "tjrob0110@proton.me",
-            "contactType": "customer service",
-            "areaServed": "Oklahoma",
-            "availableLanguage": "English"
+            "contactType": "customer service"
         },
         "areaServed": {
             "@type": "State",
             "name": "Oklahoma"
-        },
-        "address": {
-            "@type": "PostalAddress",
-            "addressRegion": "Oklahoma",
-            "addressCountry": "US"
-        },
-        "sameAs": [
-            "https://www.linkedin.com/company/rootedtech",
-            "https://twitter.com/rootedtech",
-            "https://www.facebook.com/rootedtech"
-        ],
-        "potentialAction": {
-            "@type": "ContactAction",
-            "target": "https://rootedtech.com#contact",
-            "query-input": "required name=name, required email=email, required message=message"
-        },
-        "department": [
-            {
-                "@type": "Service",
-                "name": "Oklahoma SB 626 Compliance Audits",
-                "description": "Comprehensive audits ensuring businesses meet Oklahoma SB 626 cybersecurity regulatory standards"
-            },
-            {
-                "@type": "Service",
-                "name": "Network Defense & Security",
-                "description": "24/7 security monitoring, intrusion detection, and network protection services"
-            },
-            {
-                "@type": "Service",
-                "name": "Rural Infrastructure Protection",
-                "description": "Specialized security solutions designed for rural environments with limited connectivity"
-            }
-        ]
-    }
-    </script>
-    
-    <!-- Additional JSON-LD for Local Business -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "Rooted Tech Services",
-        "description": "Cybersecurity services for Oklahoma's rural businesses",
-        "priceRange": "$$",
-        "serviceArea": {
-            "@type": "State",
-            "name": "Oklahoma"
-        },
-        "knowsAbout": [
-            "Cybersecurity",
-            "Network Security",
-            "Oklahoma SB 626",
-            "Rural Business Security",
-            "Data Protection",
-            "Risk Assessment",
-            "Incident Response",
-            "Phishing Prevention",
-            "Multi-Factor Authentication",
-            "Firewall Management"
-        ]
-    }
-    </script>
-    
-    <!-- JSON-LD for WebSite -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Rooted Tech Services",
-        "url": "https://rootedtech.com",
-        "description": "God-first cybersecurity protecting Oklahoma's rural businesses",
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://rootedtech.com#jargon?q={search_term_string}",
-            "query-input": "required name=search_term_string"
         }
-    }
-    </script>
-    
-    <!-- JSON-LD for FAQ (optional, for common questions) -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "What is Oklahoma SB 626?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Oklahoma Senate Bill 626 establishes critical cybersecurity requirements for businesses, including mandatory security assessments, incident reporting, and data protection standards."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Do you serve rural businesses?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, Rooted Tech specializes in serving Oklahoma's rural businesses, agricultural operations, healthcare providers, and small retail businesses with tailored cybersecurity solutions."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is Tithe Tech Philanthropy?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Our Tithe Tech program dedicates 10% of our profits to providing cybersecurity services to rural churches, community organizations, and small businesses that cannot afford professional protection."
-                }
-            }
-        ]
     }
     </script>
 <script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
@@ -187,7 +50,6 @@
 <body>
     <div class="paisley-overlay"></div>
     
-    <!-- Sticky Navigation -->
     <nav>
         <div class="container">
             <div class="logo">ROOTED<span>TECH</span></div>
@@ -203,7 +65,6 @@
         </div>
     </nav>
 
-    <!-- Header Section -->
     <header class="container">
         <h1>Strong Tower <span class="text-yellow">Security</span></h1>
         <p class="tagline">Fortified by Faith | Protecting Oklahoma's Rural Businesses</p>
@@ -340,30 +201,30 @@
             </p>
             
             <div style="text-align: left; max-width: 800px; margin: 40px auto;">
-                <h3 style="color: var(--accent-yellow); font-size: 1.5rem; margin-bottom: 20px;">📚 Our Protection Classes Include:</h3>
+                <h3 style="color: var(--yellow); font-size: 1.5rem; margin-bottom: 20px;">📚 Our Protection Classes Include:</h3>
                 
                 <div class="card" style="margin-bottom: 20px;">
-                    <h4 style="color: var(--accent-purple); margin-top: 0;">🔐 Fundamentals of Cybersecurity</h4>
+                    <h4 style="color: var(--purple); margin-top: 0;">🔐 Fundamentals of Cybersecurity</h4>
                     <p>Learn the basics of cybersecurity, common threats, and essential protection strategies for businesses of all sizes.</p>
                 </div>
                 
                 <div class="card" style="margin-bottom: 20px;">
-                    <h4 style="color: var(--accent-purple); margin-top: 0;">🎣 Phishing & Social Engineering Defense</h4>
+                    <h4 style="color: var(--purple); margin-top: 0;">🎯 Phishing & Social Engineering Defense</h4>
                     <p>Master the art of identifying and avoiding phishing attacks, social engineering tactics, and other manipulation techniques used by cybercriminals.</p>
                 </div>
                 
                 <div class="card" style="margin-bottom: 20px;">
-                    <h4 style="color: var(--accent-purple); margin-top: 0;">📋 Business Data Protection</h4>
+                    <h4 style="color: var(--purple); margin-top: 0;">💼 Business Data Protection</h4>
                     <p>Learn how to protect sensitive business data, implement proper backup strategies, and ensure business continuity in the face of cyber threats.</p>
                 </div>
                 
                 <div class="card" style="margin-bottom: 20px;">
-                    <h4 style="color: var(--accent-purple); margin-top: 0;">🏠 Home & Family Security</h4>
+                    <h4 style="color: var(--purple); margin-top: 0;">🏠 Home & Family Security</h4>
                     <p>Extend your protection beyond the office with practical cybersecurity for your home network, personal devices, and family members.</p>
                 </div>
                 
                 <div class="card">
-                    <h4 style="color: var(--accent-purple); margin-top: 0;">🚨 Incident Response Training</h4>
+                    <h4 style="color: var(--purple); margin-top: 0;">🚨 Incident Response Training</h4>
                     <p>Be prepared for the worst with hands-on incident response training. Learn how to quickly identify, contain, and recover from security breaches.</p>
                 </div>
             </div>
@@ -429,7 +290,7 @@
                 </div>
             </div>
             
-            <p style="font-size: 1.2rem; margin-top: 40px; padding: 20px; background: rgba(255, 215, 0, 0.1); border-radius: 10px; border-left: 4px solid var(--accent-yellow);">
+            <p style="font-size: 1.2rem; margin-top: 40px; padding: 20px; background: rgba(250, 204, 21, 0.1); border-radius: 10px; border-left: 4px solid var(--yellow);">
                 <strong class="text-yellow">Our Promise to Oklahoma:</strong> We understand that your location shouldn't determine your security. Whether you're in Oklahoma City, the panhandle, or anywhere in between, Rooted Tech provides the same high-quality, personalized cybersecurity services to protect your business, your family, and your future.
             </p>
         </div>
@@ -478,7 +339,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div style="font-size: 1.5rem; font-weight: 800; margin-bottom: 20px;">
@@ -491,7 +351,7 @@
                 God-First | Family-Oriented | Oklahoma Proud
             </p>
             <p style="margin-bottom: 10px;">
-                <a href="mailto:tjrob0110@proton.me" style="color: var(--accent-yellow); text-decoration: none;">tjrob0110@proton.me</a>
+                <a href="mailto:tjrob0110@proton.me" style="color: var(--yellow); text-decoration: none;">tjrob0110@proton.me</a>
             </p>
             <p style="margin-bottom: 30px;">
                 Serving Oklahoma's Rural Communities
@@ -505,7 +365,6 @@
         </div>
     </footer>
 
-    <!-- JavaScript -->
     <script src="js/tech-jargon.js"></script>
 </body>
 </html>
