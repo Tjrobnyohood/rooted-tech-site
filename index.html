@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <meta name="title" content="Rooted Tech Services | Strong Tower Security - Oklahoma Cybersecurity Experts">
-    <meta name="description" content="Rooted Tech Services - God-first cybersecurity company providing Oklahoma SB 626 audits, network defense, and protection for small rural businesses.">
-    <meta name="keywords" content="Rooted Tech, cybersecurity, Oklahoma SB 626, rural business security, Tithe Tech, Strong Tower Security">
+    <meta name="description" content="Rooted Tech Services - God-first cybersecurity company providing Oklahoma SB 626 audits, network defense, camera installation, and protection for small rural businesses.">
+    <meta name="keywords" content="Rooted Tech, cybersecurity, Oklahoma SB 626, rural business security, camera installation, Watchman service, Tithe Tech, Strong Tower Security">
     <meta name="theme-color" content="#0a0a0a">
     
     <title>Rooted Tech Services | Strong Tower Security</title>
@@ -53,12 +53,7 @@
         }
 
         .logo-box { display: flex; align-items: center; text-decoration: none; color: white; }
-        .logo-box img { 
-            height: 60px; 
-            width: auto; 
-            margin-right: 15px; 
-            display: block;
-        }
+        .logo-box img { height: 60px; width: auto; margin-right: 15px; display: block; }
 
         .nav-links { display: flex; list-style: none; gap: 20px; margin: 0; padding: 0; }
         .nav-links a { 
@@ -81,7 +76,7 @@
                 border-bottom: 2px solid var(--brand-blue); padding: 20px; text-align: center; gap: 20px;
             }
             .nav-links.active { display: flex; }
-            .logo-box img { height: 75px; } /* Mobile Logo Focus */
+            .logo-box img { height: 75px; }
             .logo-text { font-size: 1rem; }
         }
 
@@ -100,6 +95,14 @@
             display: inline-block; background: var(--brand-blue); color: white;
             padding: 12px 25px; text-decoration: none; border-radius: 4px;
             font-family: 'Audiowide'; margin-top: 10px; border: none; cursor: pointer;
+            transition: background 0.3s;
+        }
+        .btn:hover { background: #1a5e96; }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--brand-blue);
+            color: var(--brand-blue);
         }
 
         /* Database Styles */
@@ -134,7 +137,7 @@
             <ul class="nav-links" id="nav-list">
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#philanthropy">Philanthropy</a></li>
+                <li><a href="#watchman">Watchman</a></li>
                 <li><a href="#sb626">SB 626</a></li>
                 <li><a href="#jargon">Jargon</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -159,25 +162,53 @@
             </div>
         </section>
 
+        <section id="services">
+            <h2 class="text-blue">Our Services</h2>
+            
+            <div class="card">
+                <h3>📹 On-Site Camera Installation</h3>
+                <p>Physical security is the first line of defense. We provide professional, on-site installation of high-definition surveillance systems tailored for rural properties, barns, and business store-fronts.</p>
+            </div>
+
+            <div class="card">
+                <h3>🛡️ SB 626 Compliance Audits</h3>
+                <p>Expert assessments to ensure your business meets Oklahoma's legal standards for reasonable safeguards and safe harbor eligibility.</p>
+            </div>
+
+            <div class="card">
+                <h3>🎓 Free Security Demonstration</h3>
+                <p>We believe in education. Rooted Tech offers <strong>free security demonstration classes</strong> for local community groups and small business owners. Learn the latest threat tactics and how to defend your data in a hands-on environment.</p>
+                <a href="#contact" class="btn btn-outline">Schedule a Class</a>
+            </div>
+
+            <div class="card">
+                <h3>📜 Rules of Engagement (ROE)</h3>
+                <p>Download our standardized ROE template to define the scope of your security testing.</p>
+                <a href="assets/ROE_Template.pdf" class="btn" download><i class="fas fa-file-download"></i> Download Template</a>
+            </div>
+        </section>
+
+        <section id="watchman">
+            <h2 class="text-blue">Watchman Subscription</h2>
+            <div class="card" style="border: 2px solid var(--brand-blue);">
+                <h3>Total Technical Stewardship</h3>
+                <p>Our <strong>Watchman Service</strong> is a managed subscription designed for businesses that need a digital sentry. We don't just set it and forget it; we watch over your network round-the-clock.</p>
+                <ul>
+                    <li>24/7 Managed Threat Detection</li>
+                    <li>Priority Incident Response</li>
+                    <li>Quarterly Security Health Audits</li>
+                    <li>Managed Camera System Health Monitoring</li>
+                </ul>
+                <a href="#contact" class="btn">Become a Watchman Partner</a>
+            </div>
+        </section>
+
         <section id="philanthropy">
             <h2 class="text-blue">Tithe Tech Philanthropy</h2>
             <div class="card" style="border-top: 4px solid var(--brand-blue);">
                 <h3>10% For The Kingdom</h3>
                 <p>We believe in the principle of the tithe. 10% of all profits from Rooted Tech Services are dedicated to providing free cybersecurity audits and defense for rural Oklahoma churches and non-profits.</p>
                 <a href="https://gofund.me/31d9597e5" target="_blank" class="btn"><i class="fas fa-hand-holding-heart"></i> Support Our Mission</a>
-            </div>
-        </section>
-
-        <section id="services">
-            <h2 class="text-blue">Our Services</h2>
-            <div class="card">
-                <h3>🛡️ SB 626 Compliance Audits</h3>
-                <p>Expert assessments to ensure your business meets Oklahoma's legal standards for reasonable safeguards and safe harbor eligibility.</p>
-            </div>
-            <div class="card">
-                <h3>📜 Rules of Engagement (ROE)</h3>
-                <p>Download our standardized ROE template to define the scope of your security testing.</p>
-                <a href="assets/ROE_Template.pdf" class="btn" download><i class="fas fa-file-download"></i> Download Template</a>
             </div>
         </section>
 
@@ -204,6 +235,7 @@
                     <div class="jargon-item"><strong>PHISHING:</strong> Deceptive emails designed to steal credentials.</div>
                     <div class="jargon-item"><strong>ROE:</strong> Rules of Engagement — Guidelines for security testing protocols.</div>
                     <div class="jargon-item"><strong>ENCRYPTION:</strong> Scrambling data to prevent unauthorized access.</div>
+                    <div class="jargon-item"><strong>WATCHMAN:</strong> Rooted Tech's managed security subscription service.</div>
                 </div>
 
                 <div class="admin-add">
