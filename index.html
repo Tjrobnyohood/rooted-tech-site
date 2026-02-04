@@ -156,23 +156,46 @@
             background: #000;
             border-top: 1px solid #222;
         }
+.logo img {
+    height: 35px; /* Adjust height to fit your nav bar */
+    width: auto;
+    display: block;
+    margin-right: 10px;
+}
+
+.nav-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Responsive fix for mobile */
+@media (max-width: 600px) {
+    .nav-links {
+        display: none; /* Hides menu links on small screens to prevent overlap */
+    }
+}
     </style>
 </head>
 <body>
 
     <nav>
-        <div class="nav-layout">
-            <div class="logo">
-                <img src="assets/logo.png" alt="Logo">
-                ROOTED<span>TECH</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div class="nav-layout">
+        <a href="/" class="logo">
+            <img src="assets/logo.png" alt="" onerror="this.style.display='none'">
+            ROOTED<span class="text-blue">TECH</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
 
     <header class="container">
         <h1>Strong Tower <span class="text-blue">Security</span></h1>
