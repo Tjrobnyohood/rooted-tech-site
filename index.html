@@ -3,17 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <meta name="title" content="Rooted Tech Services - Strong Tower Security - Oklahoma Cybersecurity Experts">
-    <meta name="description" content="Rooted Tech Services - God-first cybersecurity company providing Oklahoma SB 626 audits, network defense, and protection for small rural businesses.">
-    <meta name="theme-color" content="#0a0a0a">
-    
     <title>Rooted Tech Services - Strong Tower Security</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <style>
         :root {
@@ -31,7 +26,7 @@
             font-family: 'Inter', sans-serif;
             margin: 0;
             line-height: 1.7;
-            padding-top: 90px;
+            padding-top: 100px;
         }
 
         h1, h2, h3, .logo-text { font-family: 'Audiowide', sans-serif; text-transform: uppercase; }
@@ -52,76 +47,37 @@
         }
 
         .logo-box { display: flex; align-items: center; text-decoration: none; color: white; }
-        .logo-box img { height: 50px; width: auto; margin-right: 15px; }
+        .logo-box img { height: 60px; width: auto; margin-right: 15px; display: block; }
 
         .nav-links { display: flex; list-style: none; gap: 20px; margin: 0; padding: 0; }
-        .nav-links a { color: white; text-decoration: none; font-size: 0.8rem; font-family: 'Audiowide'; transition: 0.3s; }
-        .nav-links a:hover { color: var(--brand-blue); }
+        .nav-links a { color: white; text-decoration: none; font-size: 0.8rem; font-family: 'Audiowide'; }
 
-        /* Hamburger Menu Icon */
-        .menu-toggle {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            gap: 5px;
-        }
+        .menu-toggle { display: none; flex-direction: column; cursor: pointer; gap: 5px; }
+        .menu-toggle span { width: 25px; height: 3px; background: white; border-radius: 2px; }
 
-        .menu-toggle span {
-            width: 25px; height: 3px; background: white; border-radius: 2px;
-        }
-
-        /* Mobile Adjustments */
         @media (max-width: 768px) {
-            body { padding-top: 100px; }
-            
             .menu-toggle { display: flex; }
-
             .nav-links {
-                display: none; /* Hidden by default */
-                flex-direction: column;
-                position: absolute;
-                top: 72px; left: 0; width: 100%;
-                background: var(--bg-dark);
-                border-bottom: 2px solid var(--brand-blue);
-                padding: 20px;
-                text-align: center;
-                gap: 20px;
+                display: none; flex-direction: column; position: absolute;
+                top: 82px; left: 0; width: 100%; background: var(--bg-dark);
+                border-bottom: 2px solid var(--brand-blue); padding: 20px; text-align: center; gap: 20px;
             }
-
             .nav-links.active { display: flex; }
-
-            .logo-box img { height: 65px; } /* Maximize logo space on mobile */
-            .logo-text { font-size: 1.1rem; }
-            h1 { font-size: 1.8rem; }
+            .logo-box img { height: 75px; }
         }
 
-        /* Content Sections */
-        .card {
-            background: var(--card-bg); border-radius: 8px;
-            padding: 30px; margin-bottom: 30px; border: 1px solid #222;
-        }
-
-        .scripture-box {
-            border-left: 4px solid var(--brand-blue);
-            padding-left: 20px; margin: 20px 0; font-style: italic;
-        }
-
-        .btn {
-            display: inline-block; background: var(--brand-blue); color: white;
-            padding: 12px 25px; text-decoration: none; border-radius: 4px;
-            font-family: 'Audiowide'; margin-top: 10px; border: none; cursor: pointer;
-        }
-
-        #jargon-search {
-            width: 100%; padding: 15px; background: #222; border: 1px solid var(--brand-blue);
-            color: white; border-radius: 5px; margin-bottom: 20px;
-        }
-
-        .jargon-item { border-bottom: 1px solid #333; padding: 10px 0; }
+        /* Jargon Database Styles */
+        .card { background: var(--card-bg); border-radius: 8px; padding: 30px; margin-bottom: 30px; border: 1px solid #222; }
+        #jargon-search { width: 100%; padding: 15px; background: #222; border: 1px solid var(--brand-blue); color: white; border-radius: 5px; margin-bottom: 20px; font-family: 'Inter'; }
+        .jargon-item { border-bottom: 1px solid #333; padding: 15px 0; transition: 0.3s; }
+        .jargon-item strong { color: var(--brand-blue); font-family: 'Audiowide'; font-size: 1.1rem; }
         
-        ul { padding-left: 20px; }
-        a.external-link { color: var(--brand-blue); text-decoration: underline; }
+        /* Add Term Styling */
+        .add-term-box { margin-top: 20px; display: flex; gap: 10px; flex-wrap: wrap; }
+        .add-term-box input { flex: 1; padding: 10px; background: #111; border: 1px solid #444; color: white; border-radius: 4px; min-width: 200px; }
 
+        .btn { display: inline-block; background: var(--brand-blue); color: white; padding: 12px 25px; text-decoration: none; border-radius: 4px; font-family: 'Audiowide'; border: none; cursor: pointer; }
+        
         footer { text-align: center; padding: 50px 20px; border-top: 1px solid #222; margin-top: 40px; }
     </style>
 </head>
@@ -130,138 +86,76 @@
     <nav>
         <div class="nav-layout">
             <a href="#" class="logo-box">
-                <img src="assets/logo.png" alt="Logo">
+                <img src="assets/logo.png" alt="Logo" onerror="this.src='assets/logo.svg';">
                 <span class="logo-text">ROOTED<span class="text-blue">TECH</span></span>
             </a>
-            
-            <div class="menu-toggle" id="mobile-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
+            <div class="menu-toggle" id="mobile-menu"><span></span><span></span><span></span></div>
             <ul class="nav-links" id="nav-list">
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#philanthropy">Philanthropy</a></li>
                 <li><a href="#sb626">SB 626</a></li>
-                <li><a href="#jargon">Library</a></li>
+                <li><a href="#jargon">Jargon</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <header class="container" style="text-align: center;">
-        <h1>STRONG TOWER <span class="text-blue">SECURITY</span></h1>
-        <p>Fortified by Faith — Protecting Oklahoma's Rural Businesses</p>
-    </header>
-
     <main class="container">
         
-        <section id="about">
-            <h2 class="text-blue">About Us</h2>
-            <div class="card">
-                <div class="scripture-box">
-                    "The name of the Lord is a fortified tower; the righteous run to it and are safe." <br><strong>— Proverbs 18:10</strong>
-                </div>
-                <p>Rooted Tech Services is a God-first, family-oriented cybersecurity firm dedicated to the stewardship of Oklahoma's rural communities. We protect the legacy of small businesses through technical excellence and spiritual integrity.</p>
-            </div>
-        </section>
-
-        <section id="philanthropy">
-            <h2 class="text-blue">Tithe Tech Philanthropy</h2>
-            <div class="card" style="border-top: 4px solid var(--brand-blue);">
-                <h3>Giving Back to the Kingdom</h3>
-                <p>We believe in the principle of the tithe. 10% of all profits from Rooted Tech Services are dedicated to providing free cybersecurity audits and defense for rural Oklahoma churches and non-profits.</p>
-                <a href="https://gofund.me/31d9597e5" target="_blank" class="btn"><i class="fas fa-hand-holding-heart"></i> Support Our Mission</a>
-            </div>
-        </section>
-
-        <section id="services">
-            <h2 class="text-blue">Our Services</h2>
-            <div class="card">
-                <h3>🛡️ SB 626 Compliance Audits</h3>
-                <p>Comprehensive security assessments designed to meet Oklahoma's legal standards for reasonable safeguards.</p>
-            </div>
-            <div class="card">
-                <h3>📜 Rules of Engagement (ROE)</h3>
-                <p>Download our standardized Rules of Engagement template to define scope and limitations for professional security testing.</p>
-                <a href="assets/ROE_Template.pdf" class="btn" download><i class="fas fa-file-download"></i> Download Template</a>
-            </div>
-        </section>
-
-        <section id="sb626">
-            <h2 class="text-blue">SB 626 Section 144: Safe Harbor</h2>
-            <div class="card">
-                <p>Oklahoma Senate Bill 626 provides an <strong>Affirmative Defense</strong> for businesses that implement "Reasonable Safeguards." This protects your business from certain civil penalties in the event of a breach.</p>
-                <p><strong>Official Links:</strong></p>
-                <ul>
-                    <li><a href="https://legiscan.com/OK/text/SB626/2025" target="_blank" class="external-link">View Full Bill Text</a></li>
-                    <li><a href="https://www.oklegislature.gov/BillInfo.aspx?Bill=SB626&Session=2500" target="_blank" class="external-link">OK Legislature Bill Info</a></li>
-                </ul>
-            </div>
-        </section>
-
         <section id="jargon">
-            <h2 class="text-blue">Tech Jargon Library</h2>
+            <h2 class="text-blue">Tech Jargon Database</h2>
             <div class="card">
-                <input type="text" id="jargon-search" placeholder="Search terms (e.g., SOC, Phishing, ROE)..." onkeyup="searchJargon()">
+                <input type="text" id="jargon-search" placeholder="Search alphabetically (e.g., Encryption, SOC)..." onkeyup="searchJargon()">
+                
                 <div id="jargon-list">
-                    <div class="jargon-item"><strong>SB 626:</strong> Oklahoma law providing legal protections for businesses with proactive security.</div>
+                    <div class="jargon-item"><strong>SB 626:</strong> Oklahoma legislation establishing cybersecurity standards and safe harbor laws for businesses.</div>
                     <div class="jargon-item"><strong>SOC:</strong> Security Operations Center — A centralized unit that monitors and defends your network.</div>
-                    <div class="jargon-item"><strong>ROE:</strong> Rules of Engagement — The guiding document for how a security test is conducted.</div>
-                    <div class="jargon-item"><strong>PHISHING:</strong> Deceptive emails designed to steal credentials.</div>
+                    <div class="jargon-item"><strong>PHISHING:</strong> Fraudulent attempts to obtain sensitive information through deceptive emails.</div>
+                    <div class="jargon-item"><strong>ENCRYPTION:</strong> The process of converting information or data into a code to prevent unauthorized access.</div>
+                    <div class="jargon-item"><strong>ROE:</strong> Rules of Engagement — The guiding document for security testing protocols.</div>
+                </div>
+
+                <div class="add-term-box">
+                    <input type="text" id="new-term" placeholder="New Term">
+                    <input type="text" id="new-def" placeholder="Definition">
+                    <button class="btn" onclick="addNewJargon()">Add to Database</button>
                 </div>
             </div>
         </section>
 
-        <section id="contact">
-            <div class="card">
-                <h2 class="text-blue">Contact Us</h2>
-                <form action="https://formspree.io/f/xdagplkg" method="POST">
-                    <input type="text" name="name" placeholder="Full Name" required style="width:100%; padding:10px; margin-bottom:10px; background:#222; border:1px solid #444; color:white;">
-                    <input type="email" name="email" placeholder="Email Address" required style="width:100%; padding:10px; margin-bottom:10px; background:#222; border:1px solid #444; color:white;">
-                    <textarea name="message" rows="5" placeholder="How can we help protect your business?" required style="width:100%; padding:10px; margin-bottom:10px; background:#222; border:1px solid #444; color:white;"></textarea>
-                    <button type="submit" class="btn" style="width:100%;">Request Consultation</button>
-                </form>
-            </div>
-        </section>
-
-    </main>
+        </main>
 
     <footer>
         <div class="container">
             <div class="logo-text" style="font-size: 1.5rem; margin-bottom: 20px;">ROOTED<span class="text-blue">TECH</span></div>
             
-            <p>"The name of the Lord is a fortified tower; the righteous run to it and are safe." — Proverbs 18:10</p>
-            
             <div class="footer-socials" style="margin: 25px 0; display: flex; justify-content: center; gap: 30px; font-size: 1.8rem;">
                 <a href="https://www.facebook.com/profile.php?id=61587102645770" target="_blank" style="color: #fff;"><i class="fab fa-facebook"></i></a>
                 <a href="https://www.instagram.com/rootedtechservices" target="_blank" style="color: #fff;"><i class="fab fa-instagram"></i></a>
-                <a href="https://x.com/RootedTechLLC" target="_blank" style="color: #fff;"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://x.com/RootedTechLLC" target="_blank" style="color: #fff;"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="https://gofund.me/31d9597e5" target="_blank" style="color: #00B964;"><i class="fas fa-hand-holding-heart"></i></a>
             </div>
-
-            <p style="margin-bottom: 20px;">Serving Oklahoma's Rural Communities</p>
             
-            <p style="border-top: 1px solid #333; padding-top: 20px; font-size: 0.8rem; color: #888;">
-                &copy; 2026 Forged Thru Faith, AI Powered
-            </p>
+            <p>&copy; 2026 Forged Thru Faith, AI Powered</p>
         </div>
     </footer>
 
-    
-
     <script>
-        // Mobile Menu Toggle Logic
-        const menuToggle = document.getElementById('mobile-menu');
-        const navList = document.getElementById('nav-list');
+        // 1. Alphabetize Database on Load
+        function alphabetizeJargon() {
+            const list = document.getElementById('jargon-list');
+            const items = Array.from(list.getElementsByClassName('jargon-item'));
+            
+            items.sort((a, b) => {
+                const textA = a.querySelector('strong').innerText.toUpperCase();
+                const textB = b.querySelector('strong').innerText.toUpperCase();
+                return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+            });
 
-        menuToggle.addEventListener('click', () => {
-            navList.classList.toggle('active');
-        });
+            items.forEach(item => list.appendChild(item));
+        }
 
-        // Search Jargon Logic
+        // 2. Search Function
         function searchJargon() {
             let input = document.getElementById('jargon-search').value.toLowerCase();
             let items = document.getElementsByClassName('jargon-item');
@@ -269,6 +163,34 @@
                 items[i].style.display = items[i].innerText.toLowerCase().includes(input) ? "block" : "none";
             }
         }
+
+        // 3. Auto-Insert Script
+        function addNewJargon() {
+            const term = document.getElementById('new-term').value;
+            const def = document.getElementById('new-def').value;
+            
+            if (term && def) {
+                const list = document.getElementById('jargon-list');
+                const newItem = document.createElement('div');
+                newItem.className = 'jargon-item';
+                newItem.innerHTML = `<strong>${term}:</strong> ${def}`;
+                list.appendChild(newItem);
+                
+                // Reset inputs and re-alphabetize
+                document.getElementById('new-term').value = '';
+                document.getElementById('new-def').value = '';
+                alphabetizeJargon();
+                alert("Term added and sorted!");
+            }
+        }
+
+        // Mobile Menu Logic
+        const menuToggle = document.getElementById('mobile-menu');
+        const navList = document.getElementById('nav-list');
+        menuToggle.addEventListener('click', () => { navList.classList.toggle('active'); });
+
+        // Run alphabetize on page load
+        window.onload = alphabetizeJargon;
     </script>
 </body>
 </html>
