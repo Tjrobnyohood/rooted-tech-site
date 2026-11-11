@@ -1,0 +1,9 @@
+.env
+.env.*
+!.env.example
+.pgpass
+supabase/.temp/
+.vercel
+node_modules/
+
+.telegram-chat

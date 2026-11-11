@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Owner login | Rooted Tech Services</title>
+  <meta name="robots" content="noindex">
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      fontFamily: { display: ["Audiowide", "sans-serif"], sans: ["Source Sans 3", "sans-serif"] },
+      colors: { ink: "#07080c", paper: "#f6f3ea", brand: "#3cf0ff", gold: "#ffc400" }
+    }}}
+  </script>
+</head>
+<body class="min-h-screen bg-ink font-sans text-paper">
+  <main class="mx-auto w-full max-w-3xl px-4 py-10">
+    <p class="font-display text-sm text-gold">Rooted Tech</p>
+    <h1 class="mt-2 font-display text-3xl">Owner login</h1>
+    <p class="mt-2 text-zinc-300">Consult requests stay off the public page. This login is the owner email only. A link arrives in that inbox.</p>
+    <form id="login" class="mt-6 grid gap-3">
+      <label class="grid gap-1 text-sm">Email
+        <input id="email" type="email" required value="tjrob2014@gmail.com" class="border border-zinc-700 bg-black px-3 py-3">
+      </label>
+      <button class="bg-gold px-4 py-3 font-bold uppercase text-ink" type="submit">Email me a login link</button>
+      <p id="note" class="text-sm text-brand" role="status"></p>
+    </form>
+    <section id="board" hidden class="mt-8">
+      <div class="flex items-center justify-between gap-3">
+        <h2 class="font-display text-xl">Consultations</h2>
+        <button id="out" class="border border-brand px-3 py-2 text-sm text-brand" type="button">Log out</button>
+      </div>
+      <div id="rows" class="mt-4 grid gap-3"></div>
+    </section>
+    <p class="mt-8"><a class="text-brand" href="index.html">Back to the site</a></p>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/config.js"></script>
+  <script>
+    var cfg = window.ROOTED;
+    var supabase = window.supabase.createClient(cfg.url, cfg.key);
+    var note = document.getElementById("note");
+    var board = document.getElementById("board");
+    var rows = document.getElementById("rows");
+
+    function line(label, value) {
+      var p = document.createElement("p");
+      p.className = "text-sm";
+      p.textContent = label + ": " + (value || "—");
+      return p;
+    }
+
+    async function showLeads() {
+      var session = (await supabase.auth.getSession()).data.session;
+      if (!session) return;
+      document.getElementById("login").hidden = true;
+      board.hidden = false;
+      var res = await supabase.from("leads").select("created_at,name,phone,email,interest,reach,county,message").order("created_at", { ascending: false });
+      rows.textContent = "";
+      if (res.error) {
+        note.textContent = "This login cannot read the consultations.";
+        return;
+      }
+      if (!res.data.length) {
+        rows.textContent = "No consultations yet.";
+        return;
+      }
+      res.data.forEach(function (row) {
+        var card = document.createElement("article");
+        card.className = "border border-brand/40 p-4";
+        card.appendChild(line("When", new Date(row.created_at).toLocaleString()));
+        card.appendChild(line("Name", row.name));
+        card.appendChild(line("Phone", row.phone));
+        card.appendChild(line("Email", row.email));
+        card.appendChild(line("Interest", row.interest));
+        card.appendChild(line("Reach", row.reach));
+        card.appendChild(line("County", row.county));
+        card.appendChild(line("Message", row.message));
+        rows.appendChild(card);
+      });
+    }
+
+    document.getElementById("login").addEventListener("submit", async function (event) {
+      event.preventDefault();
+      note.textContent = "Sending the link.";
+      var res = await supabase.auth.signInWithOtp({
+        email: document.getElementById("email").value.trim(),
+        options: { emailRedirectTo: location.href.split("#")[0] }
+      });
+      note.textContent = res.error ? res.error.message : "Check that inbox for the login link.";
+    });
+    document.getElementById("out").addEventListener("click", async function () {
+      await supabase.auth.signOut();
+      location.reload();
+    });
+    showLeads();
+  </script>
+</body>
+</html>
